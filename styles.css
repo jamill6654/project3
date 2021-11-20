@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Merriweather", serif;
+  background: #a6c7c4;
+}
+header {
+  text-align: center;
+}
+fieldset {
+  border: none;
+}
+hr:not(#hr2) {
+  height: 5px;
+  background: #000;
+  margin-bottom: 3px;
+}
+#hr2 {
+  height: 3px;
+  background: #000;
+  margin-top: 0;
+}
+h1 {
+  color: #fff;
+  background: rgb(49, 49, 49);
+  padding: 25px;
+  font-size: 25px;
+}
+#news,
+#contact {
+  font-size: 25px;
+  font-weight: 700;
+  padding-top: 1rem;
+}
+p {
+  max-width: 80%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  font-size: 18px;
+}
+input {
+  border-radius: 5px;
+}
+input,
+select {
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  border: none;
+  width: 100%;
+  padding: 1rem;
+}
+input,
+select,
+textarea {
+  background: #e7e9eb;
+  transition: 1000ms;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  width: auto;
+}
+textarea:focus,
+input:focus {
+  background: #fff;
+  transition-duration: 1000ms;
+}
+input:focus + label {
+  font-weight: 700;
+}
+#zip {
+  width: 50%;
+  display: block;
+}
+legend {
+  margin: 1rem 0;
+}
+#bottom-section label {
+  display: inline-block;
+}
+.btn {
+  display: block;
+  margin: 1rem auto;
+  width: 100%;
+  padding: 1rem 0 1rem;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  background: #52bab3;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+textarea {
+  margin: 1rem auto;
+  width: 100%;
+  background: #e7e9eb;
+  border: none;
+  padding: 2rem;
+}
+label[for="comments"] {
+  margin-top: 20px;
+}
+footer {
+  text-align: center;
+  margin: 1rem auto;
+  font-weight: 300;
+}
+
+@media (min-width: 768px) {
+  main {
+    max-width: 50%;
+    margin: 0 auto;
+  }
+  .container {
+    display: flex;
+  }
+  #field1 label {
+    width: 150px;
+    margin-top: 20px;
+  }
+  input,
+  select {
+    width: 50%;
+  }
+  #zip {
+    width: 20%;
+  }
+}

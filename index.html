@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="styles.css">
+ <title>THE CODE REVIEW</title>
+
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,300&display=swap"
+  rel="stylesheet">
+</head>
+
+<body>
+
+ <header>
+  <h1>THE CODE REVIEW</h1>
+  <h3>Signup for our newsletter</h3>
+  <p>Get the latest news on how your code is doing right in your inbox</p>
+ </header>
+
+
+ <main>
+  <hr id="hr1">
+  <hr id="hr2">
+  <form>
+   <fieldset id="field1">
+    <legend id="contact">Contact Information</legend>
+
+      <div class = "container">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="user_name" placeholder="Required" required>
+      </div>
+
+      <div class="container">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="user_email" placeholder="Required" required>
+      </div>
+
+      <div class="container">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="user_phone" placeholder="000-000-0000">
+      </div>
+
+      <div class="container">
+        <label for="address">Street Address</label>
+        <input type="text" id="address" name="user_address" placeholder="123 John Street">
+      </div>
+
+      <div class="container">
+        <label for="city">City</label>
+        <input type="text" id="city" name="user_city" placeholder="Cityville">
+      </div>
+
+      <div class="container">
+        <label>State</label>
+        <select id="state" name="user_state">
+          <option value="florida">Florida</option>
+          <option value="delaware">Delaware</option>
+          <option value="hawaii">Hawaii</option>
+        </select>
+      </div>
+
+      <div class="container">
+        <label for="zip">Zip Code</label>
+        <input type="text" id="zip" name="user_zipcode" placeholder="12345">
+      </div>
+   </fieldset>
+
+   <div id="bottom-section">
+   <hr>
+
+   <fieldset id="field2">
+   <legend id="news">Newsletter</legend>
+
+   <h4>Select the newsletters you would like to receive</h4>
+    <input type="checkbox" id="html" name="newsletters" value="html">
+    <label for="html">HTML News</label><br>
+    <input type="checkbox" id="css" name="newsletters" value="css">
+    <label for="css">CSS News</label><br>
+    <input type="checkbox" id="javascript" name="newsletters" value="javascript">
+    <label for="javascript">Javascript News</label><br>
+
+   <h4>Newsletter format</h4>
+    <input type="radio" id="radio-html" name="format" value="html">
+    <label for="radio-html">HTML</label><br>
+    <input type="radio" id="plain-text" name="format" value="plain-text">
+    <label for="plain-text">Plain text</label><br>
+
+    <label for="comments">Other topics you would like to hear about</label>
+    <textarea name="user_comments" id="comments" rows="4" placeholder="Comments"></textarea>
+
+    <input type="button" value="Sign Up" class="btn">
+    </fieldset>
+
+    <footer><i>Copyright The Code Review</i></footer>
+    </div>
+
+    </form>
+  </main>
+ 
+</body>
+</html>
